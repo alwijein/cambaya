@@ -12,7 +12,7 @@
                                 <tbody>
                                     <tr>
                                         <td class="pe-1">Nama Sekolah:</td>
-                                        <td><span class="fw-bold">SMAN 12 Makassar</span></td>
+                                        <td><span class="fw-bold">UPT SPF SD INPRES CAMBAYA IV</span></td>
                                     </tr>
                                     <tr>
                                         <td class="pe-1">Alamat:</td>

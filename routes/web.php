@@ -28,11 +28,14 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::middleware(['auth'])->group(function(){
-    Route::get('/', function () {
-        return view('home.home');
-    })->name('home');
+Route::get('/', function () {
+    return view('home.home');
+})->name('home');
 
+Route::middleware(['auth'])->group(function(){
+    Route::get('/user-home', function () {
+        return view('home.user_home');
+    })->name('user-home');
 
     // akses area untuk admin
     Route::middleware(['isGlobalAccess'])->group(function(){

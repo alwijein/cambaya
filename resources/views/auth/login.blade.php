@@ -12,8 +12,8 @@
                     <div class="auth-inner row m-0">
                         <!-- Brand logo-->
                         <a class="brand-logo" href="#">
-                            <img src="{{ asset('app-assets/images/logo/logo.png') }}" width="40rem" alt="">
-                            <h2 class="brand-text text-primary ms-1">SMAN 12</h2>
+                            <img src="{{ asset('app-assets/images/logo/logo.png') }}" width="35rem" alt="">
+                            <h2 class="brand-text text-primary ms-1">SD INPRES CAMBAYA IV</h2>
                         </a>
                         <!-- /Brand logo-->
                         <!-- Left Text-->
@@ -27,8 +27,7 @@
                         <!-- Register-->
                         <div class="d-flex col-lg-4 align-items-center auth-bg px-2 p-lg-5">
                             <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
-                                <h2 class="card-title fw-bold mb-1">Login dan Mulai Belajar 🚀</h2>
-                                <p class="card-text mb-2">Masukkan email dan password anda!</p>
+                                <h2 class="card-title fw-bold mb-1">Silahkan Masuk!</h2>
                                 <form class="auth-register-form mt-2" action="{{ route('login') }}" method="POST">
                                     @csrf
 
@@ -65,7 +64,7 @@
                                                     href="#">&nbsp;privacy policy & terms</a></label>
                                         </div>
                                     </div> --}}
-                                    <button class="btn btn-primary w-100" tabindex="5" type="submit">Sign up</button>
+                                    <button class="btn btn-primary w-100" tabindex="5" type="submit">Masuk</button>
                                 </form>
                             </div>
                         </div>

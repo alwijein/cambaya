@@ -1,4 +1,4 @@
-@extends('layouts.auth')
+@extends('layouts.app')
 
 
 @section('content')
@@ -19,7 +19,6 @@
                             </h2>
                     </div>
                 </div>
-                <a class="btn btn-primary float-right" href="{{ route('login') }}">Masuk</a>
             </div>
         </div>
         <div class="card mb-4 text-center">

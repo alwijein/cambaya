@@ -28,7 +28,7 @@ class LoginController extends Controller
 
 
         if(Auth::attempt($attributes)){
-                return redirect('/');
+                return redirect('/user-home');
         }
 
 
