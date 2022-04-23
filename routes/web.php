@@ -37,6 +37,34 @@ Route::middleware(['auth'])->group(function(){
         return view('home.user_home');
     })->name('user-home');
 
+    // Begin : Chat
+
+    Route::get('/chattas', 'App\Http\Controllers\ChatController@index')->name('message');
+    Route::post('message', 'App\Http\Controllers\ChatController@sendMessage');  //
+    Route::get('/message/{id}', 'App\Http\Controllers\ChatController@getMessage')->name('message');
+    Route::get('/ShowMassage/{id}', 'App\Http\Controllers\ChatController@ShowMassage');
+    Route::get('/messag/{id}', 'App\Http\Controllers\ChatController@getMessag')->name('message');
+    Route::get('/subscribe', 'App\Http\Controllers\ChatController@subscribe')->name('subscribe');
+    Route::delete('/unFollow/{id}', 'App\Http\Controllers\ChatController@remove_user');
+    /////////////////////
+    Route::get('/group/create', 'App\Http\Controllers\GroupController@create_form');
+    Route::post('/group/create', 'App\Http\Controllers\GroupController@create');
+    Route::get('/group/join', 'App\Http\Controllers\GroupController@join_form');
+    Route::post('/group/join', 'App\Http\Controllers\GroupController@join');
+
+    Route::get('/group/edit/{id}', 'App\Http\Controllers\GroupController@edit');
+
+    Route::post('/group/update/{id}', 'App\Http\Controllers\GroupController@update');
+
+    Route::delete('/group/delete/{id}', 'App\Http\Controllers\GroupController@deleteGroup');
+
+    Route::get('/group/members_list/{id}', 'App\Http\Controllers\GroupController@members_list');
+
+    Route::get('/remove_user/{id}/{user_id}', 'App\Http\Controllers\GroupController@remove_user');
+
+    // End : Chat
+
+
     // akses area untuk admin
     Route::middleware(['isGlobalAccess'])->group(function(){
 
