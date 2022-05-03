@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\API\DataGuruController;
+use App\Http\Controllers\API\HasilUJianController;
+use App\Http\Controllers\API\JadwalController;
+use App\Http\Controllers\API\LaporController;
+use App\Http\Controllers\API\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +19,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::post('login', [UserController::class, 'login']);
+
+Route::middleware('auth:sanctum')->group(function(){
+    Route::get('jadwal/siswa',[JadwalController::class, 'allJadwalSiswa']);
+    Route::get('jadwal/ujian',[JadwalController::class, 'allJadwalUjian']);
+
+    Route::get('data/guru',[DataGuruController::class, 'all']);
+
+    Route::get('hasil-ujian',[HasilUJianController::class, 'all']);
+
+    Route::get('lapor',[LaporController::class, 'all']);
 });

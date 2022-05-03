@@ -24,7 +24,7 @@ class UserController extends Controller
     public function storeSiswa(Request $request){
         $request->validate([
             'name' => ['required',  'min:3'],
-            'email' => ['required', 'unique:users' , 'email'],
+            'email' => ['required', 'unique:users'],
             'password' => ['required', 'min:8'],
         ]);
 
@@ -46,7 +46,7 @@ class UserController extends Controller
     public function updateSiswa(Request $request, $id){
         $request->validate([
             'name' => ['required',  'min:3'],
-            'email' => ['required', 'unique:users' , 'email'],
+            'email' => ['required', 'unique:users'],
             'password' => ['required', 'min:8'],
         ]);
 
