@@ -43,7 +43,10 @@ Route::middleware('auth:sanctum')->group(function(){
     // Chat Begin
 
     Route::get('chat',[ChatController::class, 'getGrubChat']);
+
     Route::get('chat/{id}',[ChatController::class, 'getMessage']);
+
+    Route::post('chat/input',[ChatController::class, 'sendMessage']);
 
 
 });
