@@ -36,7 +36,7 @@ class LaporController extends Controller
 
             // ...
 
-            $pengetahuan = Nilai::where('kode_siswa', $siswa->id)->where('semester', $semester)->get();
+            $pengetahuan = Nilai::with(['pelajaran'])->where('kode_siswa', $siswa->id)->where('semester', $semester)->get();
 
             $sikap = NilaiSikap::where('kode_siswa', $siswa->id)->where('semester', $semester)->get();
 
@@ -52,7 +52,7 @@ class LaporController extends Controller
                     "sikap" => $sikap,
                     "ekstrakurikuler" => $ekstrakurikuler,
                     "prestasi" => $prestasi,
-                    "absen" => $absen,
+                        "absen" => $absen,
                 ], 'Data Berhasil Diambil');
 
                 // return ResponseFormatter::error(null, 'Data Tidak Ada', 404);

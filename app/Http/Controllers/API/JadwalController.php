@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API;
 use App\Helpers\ResponseFormatter;
 use App\Http\Controllers\Controller;
 use App\Models\Jadwal;
+use App\Models\JadwalUjian;
 use App\Models\Kelas;
 use Illuminate\Http\Request;
 
@@ -30,10 +31,10 @@ class JadwalController extends Controller
             }
         }
 
-        $jadwal = Jadwal::with(['pelajaran', 'guru'])->where('kode_kelas', $kelas);
+        $jadwal = Jadwal::with(['pelajaran', 'guru'])->where('kode_kelas', $kelas)->orderBy('jam', 'asc');
 
         if ($hari){
-            $jadwal->where('kode_hari', $hari);
+            $jadwal->where('kode_hari', $hari)->get();
         }
 
         return ResponseFormatter::success(
@@ -53,7 +54,7 @@ class JadwalController extends Controller
         // dd($all);
 
         if($id){
-            $jadwal = Jadwal::with('pelajaran')->find($id);
+            $jadwal = JadwalUjian::with('pelajaran')->find($id);
             if($jadwal){
                 return ResponseFormatter::success($jadwal, 'Data Berhasil Diambil');
             }else{
@@ -61,10 +62,10 @@ class JadwalController extends Controller
             }
         }
 
-        $jadwal = Jadwal::with('pelajaran');
+        $jadwal = JadwalUjian::with('pelajaran')->orderBy('jam', 'asc');
 
         if ($hari){
-            $jadwal->where('kode_hari', $hari);
+            $jadwal->where('kode_hari', $hari)->get();
         }
 
         return ResponseFormatter::success(
