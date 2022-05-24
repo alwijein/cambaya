@@ -64,7 +64,7 @@ class UserController extends Controller
     // function for guru
 
     public function showGuru(){
-        $users = DB::table('users')->whereIn('role' , ['Guru', 'WaliKelas'])->get();
+        $users = DB::table('users')->whereIn('role' , ['Guru', 'WaliKelas', 'KepalaSekolah'])->get();
         return view('users_management.show_guru', compact('users'));
     }
 

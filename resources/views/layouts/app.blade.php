@@ -379,11 +379,15 @@ $avatar = substr(Auth::user()->name, 0, 2);
                             href={{ route('show-jadwal-belajar') }} data-bs-toggle="tooltip" data-bs-placement="bottom"
                             title="Jadwal Belajar"><i class="ficon" data-feather="calendar"></i></a></li>
                 </ul>
+                @if (Auth::user()->role != 'Admin')
+
                 <ul class="nav navbar-nav bookmark-icons">
                     <li class="nav-item d-none d-lg-block"><a class="nav-link" href='/chattas'
                             data-bs-toggle="tooltip" data-bs-placement="bottom" title="Chat"><i class="ficon"
                                 data-feather="message-square"></i></a></li>
                 </ul>
+                @endif
+
             </div>
             <ul class="nav navbar-nav align-items-center ms-auto">
                 {{-- <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon"
@@ -558,7 +562,7 @@ $avatar = substr(Auth::user()->name, 0, 2);
                 </ul>
                 </li>
             @endif
-            @if (Auth::user()->role == 'Admin' || Auth::user()->role == 'Guru' || Auth::user()->role == 'Siswa')
+            @if (Auth::user()->role == 'Admin' || Auth::user()->role == 'Guru' || Auth::user()->role == 'Siswa' || Auth::user()->role == 'KepalaSekolah')
 
                 <li class=" nav-item"><a class="d-flex align-items-center mt-1" href="#"><i
                             data-feather="database"></i><span class="menu-title text-truncate" data-i18n="User">Data
@@ -598,7 +602,7 @@ $avatar = substr(Auth::user()->name, 0, 2);
                 </ul>
                 </li>
             @endif
-
+            @if (Auth::user()->role != 'Admin')
                 <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i
                             data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="User">Chat Management</span></a>
                     <ul class="menu-content">
@@ -620,6 +624,7 @@ $avatar = substr(Auth::user()->name, 0, 2);
                 </li>
                 </ul>
                 </li>
+            @endif
             <li class=" navigation-header"><span data-i18n="User Interface">Ujian Management</span><i
                     data-feather="more-horizontal"></i>
             </li>
@@ -665,11 +670,11 @@ $avatar = substr(Auth::user()->name, 0, 2);
             </ul>
             </li>
 
-            @if (Auth::user()->role != 'Guru')
+            @if (Auth::user()->role != 'Guru' && Auth::user()->role != 'Admin')
                 <li class=" navigation-header"><span data-i18n="User Interface">Nilai Management</span><i
                         data-feather="more-horizontal"></i>
                 </li>
-                @if (Auth::user()->role != 'Siswa' && Auth::user()->role != 'Guru')
+                @if (Auth::user()->role != 'Siswa' && Auth::user()->role != 'KepalaSekolah' && Auth::user()->role != 'Guru')
                     <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i
                                 data-feather="thumbs-up"></i><span class="menu-title text-truncate"
                                 data-i18n="User">Nilai Sikap</span></a>

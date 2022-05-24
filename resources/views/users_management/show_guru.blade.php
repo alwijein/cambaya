@@ -53,6 +53,7 @@
                                           <option disabled selected>Pilih Status</option>
                                           <option selected value="Guru">Guru</option>
                                           <option value="WaliKelas">Wali Kelas</option>
+                                          <option value="KepalaSekolah">Kepala Sekolah</option>
                                       </select>
                                       <label>Password: </label>
                                       <div class="mb-1">
