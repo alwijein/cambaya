@@ -111,7 +111,7 @@
                                         </div>
                                     @endforeach
                                 @break
-                                @case(2)
+                                @case(3)
                                     @foreach ($rabu as $item)
                                         <div class="employee-task d-flex justify-content-between align-items-center mb-1">
                                             <div class="d-flex flex-row">
@@ -153,7 +153,7 @@
                                         </div>
                                     @endforeach
                                 @break
-                                @case(2)
+                                @case(4)
                                     @foreach ($kamis as $item)
                                         <div class="employee-task d-flex justify-content-between align-items-center mb-1">
                                             <div class="d-flex flex-row">
@@ -195,7 +195,7 @@
                                         </div>
                                     @endforeach
                                 @break
-                                @case(2)
+                                @case(5)
                                     @foreach ($jumat as $item)
                                         <div class="employee-task d-flex justify-content-between align-items-center mb-1">
                                             <div class="d-flex flex-row">
@@ -237,7 +237,7 @@
                                         </div>
                                     @endforeach
                                 @break
-                                @case(2)
+                                @case(6)
                                     @foreach ($sabtu as $item)
                                         <div class="employee-task d-flex justify-content-between align-items-center mb-1">
                                             <div class="d-flex flex-row">
