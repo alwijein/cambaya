@@ -31,7 +31,7 @@
                                 <div class="col-md-6 col-12">
                                     <div class="mb-1">
                                         <label class="form-label" for="first-name-column">Email</label>
-                                        <input type="email" id="first-name-column" class="form-control"
+                                        <input type="text" id="first-name-column" class="form-control"
                                             placeholder="Masukkan Email Baru" value="{{$siswa->email}}" name="email" />
                                     </div>
                                     @error('name')

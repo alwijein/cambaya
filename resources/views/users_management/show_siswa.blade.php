@@ -39,7 +39,7 @@
                                           {{ $message }}
                                       </div>
                                   @enderror
-                                      <label>Email: </label>
+                                      <label>NIS: </label>
                                       <div class="mb-1">
                                         <input type="text" name="email" placeholder="Masukkan Alamat Email" class="form-control" />
                                       </div>
