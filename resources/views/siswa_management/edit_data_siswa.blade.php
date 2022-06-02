@@ -93,7 +93,7 @@
                                         </div>
                                         <div class="col-sm-9">
                                             <select class="form-select mb-1" id="basicSelect" name="kode_kelas">
-                                                <option  value="{{$siswa->kode_kelas}}" selected>{{$kelas[$siswa->kode_kelas - 1]->kelas}}</option>
+                                                    <option  value="{{$siswa->kode_kelas}}" selected>{{$kelas[$siswa->kode_kelas - 1]->kelas}}</option>
                                                 @foreach ($kelas as $data)
                                                 @if ($data->id != $siswa->kode_kelas)
                                                 <option  value="{{$data->id}}" selected>{{$data->kelas}}</option>
