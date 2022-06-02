@@ -26,8 +26,8 @@
                 <h4 class="card-title text-primary">Profile Sekolah</h4>
                 <p class="card-text">
                     UPT SPF SD INPRES CAMBAYA IV merupakan salah satu sekolah inpres yang beralamat di Jl. Galangan Kapal, 
-                    Kelurahan Pannampu, Kecamatan Tallo, Kota Makassar. Sekolah ini memiliki 10 pegawai diantaranya Kepala Sekolah, 
-                    8 Guru Pendidik, dan 1 Satpam. Sekolah tersebut juga telah mengalami banyak perkembangan baik perkembangan 
+                    Kelurahan Pannampu, Kecamatan Tallo, Kota Makassar. Sekolah ini memiliki 11 pegawai diantaranya Kepala Sekolah, 
+                    9 Guru Pendidik, dan 1 Satpam. Sekolah tersebut juga telah mengalami banyak perkembangan baik perkembangan 
                     fisik bangunan, prestasi dari segi akademik maupun prestasi dalam kegiatan ekstra kurikuler.
                 </p>
                 <p class="card-text">
