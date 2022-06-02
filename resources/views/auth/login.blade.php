@@ -32,7 +32,7 @@
                                     @csrf
 
                                     <div class="mb-1">
-                                        <label class="form-label" for="email">Email</label>
+                                        <label class="form-label" for="email">Email / Nis</label>
                                         <input class="form-control" id="email" type="text" name="email"
                                             placeholder="asep@example.com" aria-describedby="email" tabindex="2" value="{{old('email')}}"/>
                                         @error('email')
