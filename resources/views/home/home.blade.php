@@ -92,8 +92,6 @@
 
     </div>
   </section><!-- End Hero -->
-=======
->>>>>>> 0a12161177d1798a925630acee4e45b665f8427c
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
