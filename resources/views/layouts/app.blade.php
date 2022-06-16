@@ -602,7 +602,7 @@ $avatar = substr(Auth::user()->name, 0, 2);
                 </ul>
                 </li>
             @endif
-            @if (Auth::user()->role != 'Admin')
+            @if (Auth::user()->role == 'Siswa' && Auth::user()->role != 'KepalaSekolah' && Auth::user()->role == 'Guru')
                 <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i
                             data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="User">Chat Management</span></a>
                     <ul class="menu-content">

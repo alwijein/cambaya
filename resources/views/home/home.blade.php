@@ -57,7 +57,8 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
+  <main id="main">
+      <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center justify-content-center">
     <div class="container" data-aos="fade-up">
 
@@ -92,8 +93,6 @@
     </div>
   </section><!-- End Hero -->
 
-  <main id="main">
-
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
@@ -103,14 +102,14 @@
             <img src="assets/img/about.jpeg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <h3>SD INPRES CAMBAYA IV</h3>
+            <h3>UPT SPF SD INPRES CAMBAYA IV  </h3>
             <p class="fst-italic">
-              Lokasinya berada di Jl. Galangan Kapal.
+              Lokasinya berada di Jl. Galangan Kapal, Kelurahan Pannampu, Kecamatan Tallo, Kota Makassar.
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> Ada 10 pegawai, yang dimana 1 Kepala Sekolah, 8 Guru Pendidik, dan 1 Satpam.</li>
+              <li><i class="ri-check-double-line"></i> Ada 11 pegawai, yang dimana 1 Kepala Sekolah, 9 Guru Pendidik, dan 1 Satpam.</li>
               <li><i class="ri-check-double-line"></i> Memiliki gedung bertingkat.</li>
-              <li><i class="ri-check-double-line"></i> Memiliki 200 siswa dari kelas 1 sampai 6.</li>
+              <li><i class="ri-check-double-line"></i> Memiliki 169 siswa dari kelas 1 sampai 6.</li>
             </ul>
             <p>
               Sekolah ini 1 pekarangan dengan sekolh SMPN 37 MAKASSAR, jadi pekarangannya sangat luas.
@@ -138,15 +137,15 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bxs-school"></i></div>
               <h4><a href="">Sekolah</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <p>UPT SPF SD INPRES CAMBAYA IV berlokasi di Jalan Galangan Kapal</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bxs-group"></i></div>
-              <h4><a href="">Guru</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <h4><a href="">Pegawai</a></h4>
+              <p>Terdiri dari 1 Kepala Sekolah, 9 Guru Pendidik dan 1 Satpam</p>
             </div>
           </div>
 
@@ -154,169 +153,13 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bxs-user"></i></div>
               <h4><a href="">Siswa</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <p>Terdapat 169 siswa dari kelas 1 sampai 6</p>
             </div>
           </div>
         </div>
 
       </div>
     </section><!-- End Services Section -->
-
-    <!-- ======= About Section ======= -->
-    {{-- <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Lainnya</h2>
-          <p>Dokumentasi</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Tim KM2</h4>
-                <p>Dokumentasi Tim Kampus Mengajar Batch 2 Bersama Kepala Sekolah </p>
-                <div class="portfolio-links">
-                  <a href={{asset("assets/img/portfolio/portfolio-1.jpeg")}} data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{{asset("assets/img/portfolio/portfolio-2.jpeg")}} class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Observasi</h4>
-                <p>
-                  Observasi Lapangan Bersama DPL dan Tim ke Sekolah
-                  SD INPRES CAMBAYA IV
-                </p>
-                <div class="portfolio-links">
-                  <a href={{asset("img/portfolio/portfolio-2.jpeg")}} data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src={{asset("img/portfolio/portfolio-3.jpeg")}} class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Pembelajaran</h4>
-                <p>Melakukan Pembelajaran Kepada Siswa-siswi Kelas 3</p>
-                <div class="portfolio-links">
-                  <a href={{asset("img/portfolio/portfolio-3.jpg")}} data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-4.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Pembelajaran 2</h4>
-                <p>Melakukan Pembelajaran Kepada Siswa-siswi Kelas 3</p>
-                <div class="portfolio-links">
-                  <a href={{asset("img/portfolio/portfolio-4.jpeg")}} data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-5.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Kerja Bakti</h4>
-                <p>Melakukan kerja bakti bersama tim km2 dan adik-adik siswa-siswi</p>
-                <div class="portfolio-links">
-                  <a href={{("assets/img/portfolio/portfolio-5.jpeg")}} data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src={{("assets/img/portfolio/portfolio-6.jpeg")}} class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Pembelajaran 3</h4>
-                <p>Melakukan Pembelajaran Kepada Siswa-siswi Kelas 3</p>
-                <div class="portfolio-links">
-                  <a href={{("assets/img/portfolio/portfolio-6.jpeg")}} data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src={{("assets/img/portfolio/portfolio-7.jpeg")}} class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Pembelajaran 4</h4>
-                <p>Melakukan Pembelajaran tambahan yaitu penerapan iptek kepada siswa-siswi kelas 6</p>
-                <div class="portfolio-links">
-                  <a href={{("assets/img/portfolio/portfolio-7.jpeg")}} data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src={{("assets/img/portfolio/portfolio-8.jpeg")}} class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Pembelajaran 5</h4>
-                <p>Melakukan Pembelajaran Kepada Siswa-siswi Kelas 6</p>
-                <div class="portfolio-links">
-                  <a href={{("img/portfolio/portfolio-8.jpeg")}} data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src={{("img/portfolio/portfolio-9.jpeg")}} class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Sosialisasi</h4>
-                <p>Melakukan sosialisasi kepada guru-guru SD INPRES CAMBAYA IV tentang aplikasi pembelajaran online</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-9.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section --> --}}
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
@@ -327,9 +170,9 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="img/testimonials/testimonials-1.jpeg" class="testimonial-img" alt="">
-                <h3>Hariadi Suwandi</h3>
-                <h4>Calon S.Kom</h4>
+                <img src="../../../public/assets/img/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Ratnawati Latif, S.Pd</h3>
+                <h4>Kepala Sekolah</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Jika Kamu Tidak Sanggup Menahan Lelahnya Belajar, Maka Kamu Harus Menahan Lelahnya Kebodohan.
@@ -340,12 +183,12 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+                <img src="../../../public/assets/img/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Raodah, S.Pd</h3>
+                <h4>Wali Kelas 1</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  Kesuksesan dan kegagalan adalah sama-sama bagian dalam hidup. Keduanya hanya sementara.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -354,11 +197,11 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
+                <h3>Niar Rukmana, S.Pd</h3>
+                <h4>Wali Kelas 2</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  Meskipun kamu merasa sedih, jangan pernah putus asa. Dan meskipun kamu terjatuh, jangan pernah hancur.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -367,11 +210,11 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
+                <h3>Nur Afni Yanti, S.Pd</h3>
+                <h4>Wali Kelas 3</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  Setiap orang selalu punya potensi dan kelebihan dalam diri mereka. Tapi terkadang kamu tidak tahu kelebihan yang kamu miliki.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -380,11 +223,37 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
+                <h3>Jumariah Hasan, S.Pd</h3>
+                <h4>Wali Kelas 4</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  Tidak usah takut gagal. Bekerjalah semaksimal mungkin dan percayalah bahwa semua jerih payah kita akan diperhitungkan oleh Tuhan.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Hj. St. Saidah, S.Pd., M.Pd</h3>
+                <h4>Wali Kelas 5</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Katakan pada hatimu kalau takut gagal justru lebih buruk dari kegagalan itu sendiri.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Yurham Darwis, S.Pd</h3>
+                <h4>Wali Kelas 6</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Berbahagialah dengan apa yang kamu miliki. Bersemangatlah dengan apa yang kamu inginkan.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -416,7 +285,7 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Lokasi:</h4>
-                <p>Jl. Galangan Kapal</p>
+                <p>Jl. Galangan Kapal, Kelurahan Pannampu, Kecamatan Tallo, Kota Makassar</p>
               </div>
 
               <div class="email">
@@ -503,7 +372,7 @@
             <h3>Information</h3>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Sekolah</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Guru</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Pegawai</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Siswa</a></li>
             </ul>
           </div>
