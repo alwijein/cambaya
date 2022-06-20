@@ -70,24 +70,6 @@
       </div>
 
       <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-building-line"></i>
-            <h3><a href="">Sekolah</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-group-line"></i>
-            <h3><a href="">Guru</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-user-line"></i>
-            <h3><a href="">Siswa</a></h3>
-          </div>
-        </div>
       </div>
 
     </div>
@@ -123,44 +105,6 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- =======  Section ======= -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Informasi</h2>
-          <p>Sarana Prasana Sekolah</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxs-school"></i></div>
-              <h4><a href="">Sekolah</a></h4>
-              <p>UPT SPF SD INPRES CAMBAYA IV berlokasi di Jalan Galangan Kapal</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxs-group"></i></div>
-              <h4><a href="">Pegawai</a></h4>
-              <p>Terdiri dari 1 Kepala Sekolah, 9 Guru Pendidik dan 1 Satpam</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxs-user"></i></div>
-              <h4><a href="">Siswa</a></h4>
-              <p>Terdapat 169 siswa dari kelas 1 sampai 6</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
       <div class="container" data-aos="zoom-in">
@@ -170,7 +114,6 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="../../../public/assets/img/testimonials-1.jpg" class="testimonial-img" alt="">
                 <h3>Ratnawati Latif, S.Pd</h3>
                 <h4>Kepala Sekolah</h4>
                 <p>
@@ -183,7 +126,6 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="../../../public/assets/img/testimonials-2.jpg" class="testimonial-img" alt="">
                 <h3>Raodah, S.Pd</h3>
                 <h4>Wali Kelas 1</h4>
                 <p>
@@ -196,7 +138,6 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                 <h3>Niar Rukmana, S.Pd</h3>
                 <h4>Wali Kelas 2</h4>
                 <p>
@@ -209,7 +150,6 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
                 <h3>Nur Afni Yanti, S.Pd</h3>
                 <h4>Wali Kelas 3</h4>
                 <p>
@@ -222,7 +162,6 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                 <h3>Jumariah Hasan, S.Pd</h3>
                 <h4>Wali Kelas 4</h4>
                 <p>
@@ -235,7 +174,6 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                 <h3>Hj. St. Saidah, S.Pd., M.Pd</h3>
                 <h4>Wali Kelas 5</h4>
                 <p>
@@ -248,7 +186,6 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                 <h3>Yurham Darwis, S.Pd</h3>
                 <h4>Wali Kelas 6</h4>
                 <p>
@@ -297,7 +234,7 @@
               <div class="phone">
                 <i class="bi bi-whatsapp"></i>
                 <h4>Whatsapp:</h4>
-                <p>+62 819 3850 7713</p>
+                <p>+62 853 4195 5331</p>
               </div>
 
             </div>
@@ -349,7 +286,7 @@
               <h3>SD INPRES CAMBAYA IV</h3>
               <p>
                 Jl. Galangan Kapal <br><br>
-                <strong>Whatsapp:</strong> +62 819 3850 7713<br>
+                <strong>Whatsapp:</strong> +62 853 4195 5331<br>
                 <strong>Facebook:</strong> Sdi Cambaya IV<br>
               </p>
               <div class="social-links mt-3">
