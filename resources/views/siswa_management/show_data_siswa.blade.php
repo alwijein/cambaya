@@ -136,7 +136,7 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>NIK</th>
+                                    <th>NIS</th>
                                     <th>Nama</th>
                                     <th>Nomor Telpon</th>
                                     <th>Alamat</th>

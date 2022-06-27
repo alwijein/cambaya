@@ -55,7 +55,7 @@
                                                         <i data-feather="edit-2" class="me-50"></i>
                                                         <span>Edit</span>
                                                     </a>
-                                                    <form action="{{ route('delete-jadwal', ['id' => $item->id]) }}" method="POST">
+                                                    <form action="{{ route('delete-jadwal', ['id' => $item->id, 'kode_kelas'=> $item->kelas->id]) }}" method="POST">
                                                         @method('delete')
                                                         @csrf
                                                         <button class="dropdown-item" type="submit">
@@ -97,7 +97,7 @@
                                                         <i data-feather="edit-2" class="me-50"></i>
                                                         <span>Edit</span>
                                                     </a>
-                                                    <form action="{{ route('delete-jadwal', ['id' => $item->id]) }}" method="POST">
+                                                    <form action="{{ route('delete-jadwal', ['id' => $item->id, 'kode_kelas'=> $item->kelas->id]) }}" method="POST">
                                                         @method('delete')
                                                         @csrf
                                                         <button class="dropdown-item" type="submit">
@@ -139,7 +139,7 @@
                                                         <i data-feather="edit-2" class="me-50"></i>
                                                         <span>Edit</span>
                                                     </a>
-                                                    <form action="{{ route('delete-jadwal', ['id' => $item->id]) }}" method="POST">
+                                                    <form action="{{ route('delete-jadwal', ['id' => $item->id, 'kode_kelas'=> $item->kelas->id]) }}" method="POST">
                                                         @method('delete')
                                                         @csrf
                                                         <button class="dropdown-item" type="submit">
@@ -181,7 +181,7 @@
                                                         <i data-feather="edit-2" class="me-50"></i>
                                                         <span>Edit</span>
                                                     </a>
-                                                    <form action="{{ route('delete-jadwal', ['id' => $item->id]) }}" method="POST">
+                                                    <form action="{{ route('delete-jadwal', ['id' => $item->id, 'kode_kelas'=> $item->kelas->id]) }}" method="POST">
                                                         @method('delete')
                                                         @csrf
                                                         <button class="dropdown-item" type="submit">
@@ -223,7 +223,7 @@
                                                         <i data-feather="edit-2" class="me-50"></i>
                                                         <span>Edit</span>
                                                     </a>
-                                                    <form action="{{ route('delete-jadwal', ['id' => $item->id]) }}" method="POST">
+                                                    <form action="{{ route('delete-jadwal', ['id' => $item->id, 'kode_kelas'=> $item->kelas->id]) }}" method="POST">
                                                         @method('delete')
                                                         @csrf
                                                         <button class="dropdown-item" type="submit">
@@ -265,7 +265,7 @@
                                                         <i data-feather="edit-2" class="me-50"></i>
                                                         <span>Edit</span>
                                                     </a>
-                                                    <form action="{{ route('delete-jadwal', ['id' => $item->id]) }}" method="POST">
+                                                    <form action="{{ route('delete-jadwal', ['id' => $item->id, 'kode_kelas'=> $item->kelas->id]) }}" method="POST">
                                                         @method('delete')
                                                         @csrf
                                                         <button class="dropdown-item" type="submit">

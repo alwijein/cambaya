@@ -41,7 +41,7 @@
                                   @enderror
                                       <label>NIS: </label>
                                       <div class="mb-1">
-                                        <input type="text" name="email" placeholder="Masukkan Alamat Email" class="form-control" />
+                                        <input type="text" name="email" placeholder="Masukkan Nomor Induk" class="form-control" />
                                       </div>
                                       @error('email')
                                       <div class="text-danger mt-1">
@@ -76,7 +76,7 @@
                             <thead>
                                 <tr>
                                     <th>Nama</th>
-                                    <th>Email</th>
+                                    <th>NIS</th>
                                     <th>Status</th>
                                     <th>Actions</th>
                                 </tr>

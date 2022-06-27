@@ -65,7 +65,7 @@ class JadwalController extends Controller
             'kode_kelas' => $request->kelas,
         ]);
 
-        return redirect(route('input-jadwal'));
+        return redirect(route('show-jadwal-belajar'));
     }
 
     public function editJadwal($id){
@@ -133,11 +133,11 @@ class JadwalController extends Controller
         return view('guru_management.components.jadwal_mengajar', compact('jadwal', 'title'));
     }
 
-    public function destroy($id){
+    public function destroy($id, $kode_kelas){
         $jadwal = Jadwal::where('id', $id)->first();
         $jadwal->delete();
 
-        return redirect("detail-jadwal/$id/detail");
+        return redirect("detail-jadwal/$kode_kelas/detail");
 
     }
 }

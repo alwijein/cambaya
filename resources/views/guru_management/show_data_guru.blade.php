@@ -124,7 +124,7 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>NIK</th>
+                                    <th>NIP</th>
                                     <th>Nama</th>
                                     <th>Jenis Kelamin</th>
                                     <th>Nomor Telpon</th>

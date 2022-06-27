@@ -43,7 +43,7 @@ class UjianContoller extends Controller
             'kode_pelajaran' => $request->matapelajaran,
         ]);
 
-        return redirect('input-ujian');
+        return redirect('show-ujian');
     }
 
     public function destroy($id){
@@ -109,7 +109,7 @@ class UjianContoller extends Controller
             'desk_keterampilan'  => $request->desk_keterampilan,
         ]);
 
-        return redirect(route('detail-nilai-ujian', ['id' => $id]));
+        return redirect(route('show-nilai-ujian'));
     }
 
     public function showNilaiUjian(){
