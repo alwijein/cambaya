@@ -379,7 +379,7 @@ $avatar = substr(Auth::user()->name, 0, 2);
                             href={{ route('show-jadwal-belajar') }} data-bs-toggle="tooltip" data-bs-placement="bottom"
                             title="Jadwal Belajar"><i class="ficon" data-feather="calendar"></i></a></li>
                 </ul>
-                @if (Auth::user()->role != 'Admin')
+                @if (Auth::user()->role != 'Admin' || Auth::user()->role != 'KepalaSekolah')
 
                 <ul class="nav navbar-nav bookmark-icons">
                     <li class="nav-item d-none d-lg-block"><a class="nav-link" href='/chattas'
@@ -600,7 +600,7 @@ $avatar = substr(Auth::user()->name, 0, 2);
                 </ul>
                 </li>
             @endif
-            @if (Auth::user()->role != 'Admin')
+            @if (Auth::user()->role == 'Siswa' && Auth::user()->role != 'KepalaSekolah' && Auth::user()->role == 'Guru')
                 <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i
                             data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="User">Chat Management</span></a>
                     <ul class="menu-content">

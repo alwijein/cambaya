@@ -242,7 +242,7 @@
                 <h4 class="mt-2 mb-1">F. KETIDAKHADIRAN</h4>
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Prestasi Siswa</h4>
+                        <h4 class="card-title">Ketidakhadiran Siswa</h4>
                     </div>
                     <div class="table-responsive">
                         <table class="table">
