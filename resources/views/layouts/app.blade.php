@@ -379,7 +379,7 @@ $avatar = substr(Auth::user()->name, 0, 2);
                             href={{ route('show-jadwal-belajar') }} data-bs-toggle="tooltip" data-bs-placement="bottom"
                             title="Jadwal Belajar"><i class="ficon" data-feather="calendar"></i></a></li>
                 </ul>
-                @if (Auth::user()->role != 'Admin' || Auth::user()->role != 'KepalaSekolah')
+                @if (Auth::user()->role != 'Admin' && Auth::user()->role != 'KepalaSekolah')
 
                 <ul class="nav navbar-nav bookmark-icons">
                     <li class="nav-item d-none d-lg-block"><a class="nav-link" href='/chattas'
@@ -476,7 +476,7 @@ $avatar = substr(Auth::user()->name, 0, 2);
                         </ul>
                     </li>
                 @endif
-                @if (Auth::user()->role != 'WaliKelas')
+                
                     <li class=" navigation-header"><span data-i18n="User Interface">Siswa Management</span><i
                             data-feather="more-horizontal"></i>
                     </li>
@@ -501,10 +501,11 @@ $avatar = substr(Auth::user()->name, 0, 2);
                     </li>
             </ul>
             </li>
-            @endif
+            
 
-            @if (Auth::user()->role == 'Admin')
-                <li class=" nav-item"><a class="d-flex align-items-center mt-1" href="#"><i
+            @if (Auth::user()->role == 'Admin' || Auth::user()->role == 'WaliKelas' )
+            @if (Auth::user()->role != 'WaliKelas') 
+            <li class=" nav-item"><a class="d-flex align-items-center mt-1" href="#"><i
                             data-feather="book-open"></i><span class="menu-title text-truncate" data-i18n="User">Kelas
                             Siswa</span></a>
                     <ul class="menu-content">
@@ -516,7 +517,8 @@ $avatar = substr(Auth::user()->name, 0, 2);
                         </li>
                 </li>
                 </ul>
-                <li class=" nav-item"><a class="d-flex align-items-center mt-1" href="#"><i
+            @endif
+            <li class=" nav-item"><a class="d-flex align-items-center mt-1" href="#"><i
                             data-feather="database"></i><span class="menu-title text-truncate" data-i18n="User">Data
                             Siswa</span></a>
                     <ul class="menu-content">
@@ -530,7 +532,7 @@ $avatar = substr(Auth::user()->name, 0, 2);
                 </ul>
                 </li>
             @endif
-            @if (Auth::user()->role == 'Admin' || Auth::user()->role == 'Guru')
+            @if (Auth::user()->role != 'KepalaSekolah' && Auth::user()->role != 'Siswa')
 
                 <li class=" navigation-header"><span data-i18n="User Interface">Guru Management</span><i
                         data-feather="more-horizontal"></i>
@@ -576,6 +578,33 @@ $avatar = substr(Auth::user()->name, 0, 2);
                 </ul>
                 </li>
             @endif
+            @if (Auth::user()->role != 'Admin' && Auth::user()->role != 'KepalaSekolah')
+            
+            <li class=" navigation-header"><span data-i18n="User Interface">Chat Management</span><i
+                        data-feather="more-horizontal"></i>
+                </li>
+            <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i
+                            data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="User">Chat Management</span></a>
+                    <ul class="menu-content">
+                        <li class="{{ request()->is('chattas*') ? 'active' : '' }}"><a
+                                class="d-flex align-items-center" href="/chattas"><i
+                                    data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="List">Lihat Chat</span></a>
+                        </li>
+                        <li class="{{ request()->is('group/create*') ? 'active' : '' }}"><a
+                                class="d-flex align-items-center" href="/group/create"><i
+                                    data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="List">Buat Grub Chat</span></a>
+                        </li>
+                        <li class="{{ request()->is('subscribe*') ? 'active' : '' }}"><a
+                                class="d-flex align-items-center" href="{{ route('subscribe') }}"><i
+                                    data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="List">Gabung Grub Chat</span></a>
+                        </li>
+                </li>
+                </ul>
+                </li>
+            @endif
             @if (Auth::user()->role == 'Admin')
                 <li class=" navigation-header"><span data-i18n="User Interface">Pelajaran Management</span><i
                         data-feather="more-horizontal"></i>
@@ -600,29 +629,8 @@ $avatar = substr(Auth::user()->name, 0, 2);
                 </ul>
                 </li>
             @endif
-            @if (Auth::user()->role == 'Siswa' && Auth::user()->role != 'KepalaSekolah' && Auth::user()->role == 'Guru')
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i
-                            data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="User">Chat Management</span></a>
-                    <ul class="menu-content">
-                        <li class="{{ request()->is('chattas*') ? 'active' : '' }}"><a
-                                class="d-flex align-items-center" href="/chattas"><i
-                                    data-feather="circle"></i><span class="menu-item text-truncate"
-                                    data-i18n="List">Lihat Chat</span></a>
-                        </li>
-                        <li class="{{ request()->is('group/create*') ? 'active' : '' }}"><a
-                                class="d-flex align-items-center" href="/group/create"><i
-                                    data-feather="circle"></i><span class="menu-item text-truncate"
-                                    data-i18n="List">Buat Grub Chat</span></a>
-                        </li>
-                        <li class="{{ request()->is('subscribe*') ? 'active' : '' }}"><a
-                                class="d-flex align-items-center" href="{{ route('subscribe') }}"><i
-                                    data-feather="circle"></i><span class="menu-item text-truncate"
-                                    data-i18n="List">Gabung Grub Chat</span></a>
-                        </li>
-                </li>
-                </ul>
-                </li>
-            @endif
+                
+                
             <li class=" navigation-header"><span data-i18n="User Interface">Ujian Management</span><i
                     data-feather="more-horizontal"></i>
             </li>
@@ -712,12 +720,12 @@ $avatar = substr(Auth::user()->name, 0, 2);
                 @endif
                 <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i
                             data-feather="book"></i><span class="menu-title text-truncate" data-i18n="User">Nilai
-                            Lapor</span></a>
+                            Rapor</span></a>
                     <ul class="menu-content">
                         <li class="{{ request()->is('show-nilai/lapor*') ? 'active' : '' }}"><a
                                 class="d-flex align-items-center" href="{{ route('show-nilai-lapor') }}"><i
                                     data-feather="circle"></i><span class="menu-item text-truncate"
-                                    data-i18n="List">Lihat Lapor</span></a>
+                                    data-i18n="List">Lihat Nilai Rapor</span></a>
                         </li>
                 </li>
                 </ul>
