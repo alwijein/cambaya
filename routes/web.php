@@ -63,6 +63,7 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/remove_user/{id}/{user_id}', 'App\Http\Controllers\GroupController@remove_user');
 
     // End : Chat
+    Route::get('/show-data-siswa',[DataController::class, 'showDataSiswa'])->name('show-data-siswa');
 
 
     // akses area untuk admin
@@ -95,7 +96,6 @@ Route::middleware(['auth'])->group(function(){
             Route::delete('/show-kelas/{id}',[KelasController::class, 'destroy'])->name('delete-kelas');
 
 
-            Route::get('/show-data-siswa',[DataController::class, 'showDataSiswa'])->name('show-data-siswa');
             Route::post('/show-data-siswa',[DataController::class, 'storeSiswa']);
             Route::get('/show-data-siswa/{id}/edit',[DataController::class, 'editSiswa'])->name('edit-data-siswa');
             Route::put('/show-data-siswa/{id}',[DataController::class, 'updateSiswa']);

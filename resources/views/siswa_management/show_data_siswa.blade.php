@@ -20,6 +20,8 @@
         <div class="row" id="basic-table">
             <div class="col-12">
                 <div class="card">
+            @if (Auth::user()->role == 'Admin')
+
                     <div class="card-header">
                         <h4 class="card-title">Daftar Siswa</h4>
                         <div class="form-modal-ex">
@@ -132,6 +134,7 @@
                             </div>
                         </div>
                     </div>
+                    @endif
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
