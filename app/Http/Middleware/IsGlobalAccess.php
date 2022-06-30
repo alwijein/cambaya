@@ -16,7 +16,7 @@ class IsGlobalAccess
      */
     public function handle(Request $request, Closure $next)
     {
-        if ($request->user()->role != 'Admin' && $request->user()->role != 'Guru') {
+        if ($request->user()->role != 'Admin' && $request->user()->role != 'Guru' && $request->user()->role != 'WaliKelas') {
             return redirect('/');
         }
         return $next($request);
